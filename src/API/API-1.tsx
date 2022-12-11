@@ -31,7 +31,7 @@ function API1(carName: string, carYear: number,
 
   config = {
     method: 'post',
-    url: 'http://localhost:4000/api1',
+    url: 'https://turner-quotes.azurewebsites.net/api1',
     headers: {
       'Content-Type': 'application/json'
     },
@@ -44,7 +44,7 @@ function API1(carName: string, carYear: number,
       API2(claimHistory, setRiskRating, setApiError)
     })
     .catch((error: { message: string, name: string }) => {
-      setApiError(error);
+      setApiError({ message: error.message, name: error.name });
       throw new Error(error.message)
     });
 }
