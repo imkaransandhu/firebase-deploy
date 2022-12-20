@@ -22,7 +22,7 @@ export default function API2(claim: string, setRiskRating: (arg0: any) => void, 
 
   config = {
     method: 'post',
-    url: 'https://turner-quotes.azurewebsites.net/api2',
+    url: 'https://turner-quotes.azurewebsites.net/getriskrating',
     headers: {
       'Content-Type': 'application/json'
     },

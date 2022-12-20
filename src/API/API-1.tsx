@@ -31,7 +31,7 @@ function API1(carName: string, carYear: number,
 
   config = {
     method: 'post',
-    url: 'https://turner-quotes.azurewebsites.net/api1',
+    url: 'https://turner-quotes.azurewebsites.net/getcarvalue',
     headers: {
       'Content-Type': 'application/json'
     },

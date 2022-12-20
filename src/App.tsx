@@ -1,10 +1,9 @@
 import Header from "./Components/Header";
-import "./App.css"
 import FormGroup from "./Components/FormGroup";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="text-center md:px-16 p-4 bg-red-800">
       <Header mission="Mission-3" />
       <FormGroup />
     </div>
