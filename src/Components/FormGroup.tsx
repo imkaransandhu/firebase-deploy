@@ -44,15 +44,15 @@ const FormGroup = (): ReactElement => {
       <button type="submit" className="bg-black font-bold p-2 text-xl text-slate-300 w-20 mx-auto">Go</button>
 
       <div>
-        <h1>Car Value: {carValue}</h1>
-        <h1>Risk Rating: {riskRating}</h1>
+        <h1 className="text-xl font-bold">Car Value: {carValue}</h1>
+        <h1 className="text-xl font-bold">Risk Rating: {riskRating}</h1>
       </div>
 
 
       {apiError &&
         (<div>
-          <h1>{`Error Message: ${apiError.message} `}</h1>
-          <h1>{`Error Type: ${apiError.name}`}</h1>
+          <h1 className="text-xl font-bold">{`Error Message: ${apiError.message} `}</h1>
+          <h1 className="text-xl font-bold">{`Error Type: ${apiError.name}`}</h1>
         </div>)}
     </form>
   );
